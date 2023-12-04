@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/* ::placeholder {
+  color: #090808;
+  opacity: 1;
+} */
+
+input::-webkit-input-placeholder {
+  color: #090808;
+}
+input:focus::-webkit-input-placeholder {
+  color: grey;
+}
+.section {
+  background-color: #f3f3f2;
+  width: 1440px;
+  height: 640px;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  padding-left: 102px;
+  padding-right: 102px;
+  position: relative;
+}
+
+.section__content {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 145px;
+}
+.section__header {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57.6px;
+  margin-bottom: 8px;
+}
+
+.section__info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.8px;
+  color: #55524e;
+  margin-bottom: 64px;
+  width: 365px;
+}
+
+.section__form {
+  width: 720px;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 50;
+  top: 415px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.search-location {
+  width: 34.3%;
+  margin-top: 22px;
+}
+
+.search-location::before {
+  content: "Location";
+  color: #787573;
+  font-size: 12px;
+  line-height: 12px;
+  margin-left: 25px;
+}
+
+.search-location-input {
+  width: 100%;
+  height: 45%;
+  padding-left: 24px;
+  font-size: 13px;
+  line-height: 12px;
+}
+.search-dates {
+  width: 32.7%;
+  margin-top: 22px;
+}
+
+.search-dates::before {
+  content: "Dates";
+  color: #787573;
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 25px;
+  border-left: 1px solid #cecdca;
+}
+
+.search-dates-input {
+  width: 100%;
+  height: 45%;
+  padding-left: 25px;
+  border-left: 1px solid #cecdca;
+  color: #090808;
+  font-size: 13px;
+  line-height: 12px;
+}
+
+.search-button {
+  width: 26.2%;
+}
+
+.form-margin:not(:last-child) {
+  margin-right: 24px;
+}
+
+.search-button-click {
+  width: 83%;
+  height: 80%;
+  background-color: #08786c;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin: 8px 8px 8px 24px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #08786c;
+  opacity: 0.8;
+}
+.margin-icon {
+  margin-right: 8px;
+}
